@@ -1,0 +1,29 @@
+//Primitive Data Types in apex
+
+String greeting = 'Hello World';
+System.debug(greeting);
+
+
+Boolean amIAwake = true;
+System.debug(amIAwake);
+
+Integer rollNumber = 11008890;
+System.debug(rollNumber);
+
+Long worldPopulation = 7000000000L;
+System.debug(worldPopulation);
+
+Double lightSpeed = 93000000/186000;
+System.debug(lightSpeed);
+
+// Create a specific Date object: July 2, 2025 (YYYY, MM, DD)
+Date tDay = Date.newInstance(2025, 7, 2);
+System.debug(tDay); // Outputs: 2025-07-02
+
+// Create a specific Time object: 4:15:00 AM (HH, MM, SS, MS)
+Time currentTime = Time.newInstance(4, 15, 0, 0);
+System.debug(currentTime); // Outputs: 04:15:00.000Z
+
+// Create a specific DateTime object: July 2, 2025 at 4:15:00 AM (YYYY, MM, DD, HH, MM, SS)
+DateTime currentDateTime = DateTime.newInstance(2025, 7, 2, 4, 15, 0);
+System.debug(currentDateTime); // Outputs: 2025-07-02 04:15:00
